@@ -1,12 +1,52 @@
-# React + Vite
+Esta es una aplicación de lista de tareas (TodoList) construida con React, Redux y Material-UI. La aplicación permite a los usuarios agregar, editar, eliminar y marcar tareas como completadas. También incluye un selector de tema oscuro/claro y un filtro para mostrar todas las tareas, solo las completadas o solo las pendientes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tecnologías y Dependencia:
 
-Currently, two official plugins are available:
+Este proyecto utiliza las siguientes tecnologías y dependencias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: Biblioteca principal para construir la interfaz de usuario.
+Redux: Gestión del estado global de la aplicación.
+Material-UI (MUI): Proporciona componentes de interfaz de usuario y diseño, como botones, cuadros de texto y listas.
+Framer Motion: Animaciones y transiciones en la interfaz.
+React Router: Para manejar las rutas (si se usaran en el futuro).
+Snackbar y Alertas: Utilizados para mostrar mensajes de estado (confirmación de eliminación de tarea, etc.).
 
-## Expanding the ESLint configuration
+## 🔧 Pasos de Instalación y Ejecución
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para instalar y ejecutar la aplicación localmente, sigue estos pasos:
+
+1. Clona el repositorio:
+    ```sh
+    git clone https://github.com/SergioCuadros/To-Do-List}
+    ```
+
+2. Instala las dependencias:
+    ```sh
+    npm install
+    ```
+
+3. Inicia la aplicación:
+    ```sh
+    npm run dev
+    ```
+
+## 📁 Estructura del Proyecto
+TodoList/
+├── public/                      # Archivos públicos
+├── src/                         
+│   ├── components/              # Componentes de la interfaz
+│   │   ├── AddTaskModal.jsx     # Modal para agregar tareas
+│   │   ├── ConfirmDeleteModal.jsx  # Modal para confirmar eliminación de tarea
+│   │   ├── Navbar.jsx           # Barra de navegación
+│   │   ├── TodoItem.jsx         # Componente para cada tarea
+│   │   └── TodoList.jsx         # Componente que maneja la lista de tareas
+│   ├── context/                 
+│   │   └── ThemeContext.js      # Contexto para gestionar el tema
+│   ├── store/                   
+│   │   ├── todoSlice.js         # Slice de Redux para gestionar las tareas
+│   │   └── task.js              # Modelo de tarea 
+│   ├── App.js                   # Componente principal de la aplicación
+│   ├── index.js                 # Punto de entrada de la aplicación
+│   └── ...                       # Otros archivos y recursos de la aplicación
+├── package.json                 # Dependencias y configuraciones del proyecto
+└── README.md                    # Este archivo
