@@ -10,7 +10,6 @@ El proyecto utiliza las siguientes bibliotecas y herramientas:
 - **Redux Toolkit**: Gestión del estado global de la aplicación.
 - **Material-UI (MUI)**: Proporciona componentes de interfaz de usuario y diseño, como botones, cuadros de texto y listas.
 - **Framer Motion**: Animaciones y transiciones en la interfaz.
-- **React Router**: Para manejar las rutas (si se usaran en el futuro).
 - **Snackbar y Alertas**: Utilizados para mostrar mensajes de estado (confirmación de eliminación de tarea, etc.).
 
 
